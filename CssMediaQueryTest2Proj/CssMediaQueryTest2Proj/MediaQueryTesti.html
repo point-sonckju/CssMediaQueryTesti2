@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style type="text/css">
+        body {
+            background-color: darkseagreen;
+        }
+        .omaStyle1 {
+            background-color: palevioletred;
+            width: 300px;
+            height: 300px;
+            float: left;
+        }
+        .omaStyle2 {
+            background-color: olive;
+            width: 300px;
+            height: 300px;
+            float: left;
+        }
+        .omaStyle3 {
+            background-color: grey;
+            width: 300px;
+            height: 300px;
+            float: left;
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {
+                background-color: darkseagreen;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: dodgerblue;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            body {
+                background-color: lightcyan;
+            }
+            .omaStyle3 {
+                display: none;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Oma MediaQuery -testisivusto</h1>
+
+    <div class="omaStyle1"><p>Tässä jotain sisältöä 111</p></div>
+    <div class="omaStyle2"><p>Tässä jotain sisältöä 222</p></div>
+    <div class="omaStyle3"><p>Tässä jotain sisältöä 333</p></div>
+
+
+</body>
+</html>
